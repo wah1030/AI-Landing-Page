@@ -398,6 +398,21 @@
 </div>
 </div>
 </div>
+<form action="https://script.google.com/macros/s/AKfycbwWjIWwyibBLzeYAn9yi7-V4Pb2BEQMVQkSkXCydYeBIsKGXbccSOfQ5JOyFPODKX8/exec" method="POST" target="hidden_iframe" style="display: flex; flex-direction: column; gap: 15px; max-width: 400px; margin: 0 auto;">
+    
+    <input type="text" name="name" placeholder="您的称呼 (如: 黎先生)" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+    
+    <input type="tel" name="phone" placeholder="您的 WhatsApp 号码" required style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+    
+    <textarea name="message" placeholder="您想了解什么？(选填)" rows="4" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+    
+    <button type="submit" style="padding: 12px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">
+        获取免费咨询 / 立即报名
+    </button>
+</form>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {alert('提交成功！我们会尽快通过 WhatsApp 联系您。');}"></iframe>
+<script>var submitted = false;</script>
 </section>
 <!-- Footer (Shared Component) -->
 <footer class="w-full py-12 px-8 border-t border-[#393939]/10 bg-[#0e0e0e]">
